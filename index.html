@@ -1,25 +1,114 @@
-<!DOCTYPE html>
+<!DOCTYPE html lang="en-US">
   <head>
-    <html lang="en-US">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Teach Myself CSS - Units and Values">
     <title>CSS Units and Values</title>
   </head>
   <body>
-    <!-----------------------------------------------------
+  <!-----------------------------------------------------
     My CSS Cheat Sheet for learning CSS - Values and Units
     ------------------------------------------------------>
 
-    <!------------------------
+  <!------------------------
     Finding your way around 
     --------------------------
     1. nav 
 
     ------------------------->
-    <main class="container">
-      <h1>CSS Values and Units Cheatsheet</h1>
-    </main>
-
-  </body>
-    
+  <header>
+    <h1>CSS Values and Units Cheatsheet</h1>
+  </header>
+  <main class="container">
+    <section>
+      <header>
+        <h3>Numeric Values</h3>
+      </header>
+      <div>
+        <p>Numeric values are used to set length and size of elements.</p>
+        <p>Absolute values always remain the set size regardless of any other related settings</p>
+        <ul>
+          <li>px</li>
+          <li>mm</li>
+          <li>cm</li>
+          <li>in</li>
+          <li>pt (points = 1/72 inch)</li>
+          <li>pc (pica = 12 points)</li>
+        </ul>
+        <p>Relative values are relative to the current elements font-size or viewport size</p>
+        <ul>
+          <li>em (M)</li>
+          <li>ex (x - not common)</li>
+          <li>ch (0 - not common)</li>
+          <li>rem (root em)</li>
+          <li>vw (1/100<sup>th</sup> width of viewport</li>
+          <li>vh (1/100<sup>th</sup> height of viewport</li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <header>
+        <h3>Unitless Values</h3>
+      </header>
+      <div>
+        <p>Unitless values are most commonly used to remove values, such as <span class="example">margin:0;</span></p>
+      </div>
+    </section>
+    <section>
+      <header>
+        <h3>Percentages</h3>
+      </header>
+      <div>
+        <p>Can be used to specify most things that can be specified with specific numerical values. This allows you to create, for example, boxes whose width will always shift to be a certain percentage of their parent containers width. </p><p>Unitless values are most commonly used to remove values, such as <span class="example"> (font-size: 200% = 2em = 32px)</span></p>
+      </div>
+    </section>
+    <section>
+      <header>
+        <h3>Colour Values</h3>
+      </header>
+      <div>
+        <ul>
+          <li>
+            <p>Keywords</p>
+            <p>165 values</p>
+            <p><span class="example">background-color: red;</span></p>
+          </li>
+          <li>
+            <p>Hexadecimal</p>
+            <p>256 values</p>
+            <p><span class="example">background-color: #ff0000;</span></p>
+          </li>
+          <li>
+            <p>RGB</p>
+            <p>Red Green Blue</p>
+            <p>256 values</p>
+            <p><span class="example">background-color: rgb (0,0,255);</span></p>
+          </li>
+          <li>
+            <p>HSL</p>
+            <p>Hue Saturation Light</p>
+            <p>16.7 million values</p>
+            <p><span class="example">background-color: hsl(240, 100%, 50%);</span></p>
+          </li>
+          <li>
+            <p>RGBA</p>
+            <p>Red Green Blue Alpha (transparency)</p>
+            <p><span class="example">background-color: rgba (255,0,0,0.5);</span></p>
+          </li>
+          <li>
+            <p>HSLA</p>
+            <p>Hue Saturation Light Alpha (transparency)</p>
+            <p><span class="example">background-color: hsla(240, 100%, 50%, 0.5);</span></p>
+          </li>
+          <li>
+            <p>Opacity</p>
+            <p>Opacity can also be set using the opacity property but it is applied to all selected elements and their children</p>
+            <p><span class="example">{background-color: rgb (255,0,0);opacity: 0.5;}</span></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+  </footer>
+</body>
 </html>
