@@ -1,0 +1,101 @@
+/*========================
+Declare variables for page
+=========================*/
+:root {
+  /*color scheme*/
+  --page-background: #bbdefb; /*Pale Blue*/
+  --box-background: #fce4ec; /*Peach*/
+  --border: #7880b5; /*Lilac*/
+  --sub-border: #6bbaec; /*Turquoise*/
+  --text: #6987c9; /*Blue*/
+}
+
+/*import fonts*/
+
+/*=====================
+Basic Styles 
+======================*/
+html,
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  background: var(--page-background);
+  color: var(--text);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+/*set global styles*/
+body * {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+}
+
+/*=============
+Text and fonts
+===============*/
+
+/*fallback fonts - never shall Times New Roman be seen again!!!*/
+h1,
+h2,
+h3,
+p,
+a,
+li {
+  font-family: Verdana, sans-serif;
+}
+
+h1 {
+  padding: 20px;
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+h2 {
+  text-align: center;
+  padding: 5px;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+p {
+  line-height: 2rem;
+}
+/*=====================
+Layout and positioning
+======================*/
+
+/*single column layout centered - option to add aside to the sides later if needed for note highlights*/
+
+.container {
+  width: 85%;
+  background: white;
+  border: 4px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 25px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.container section {
+  width: 85%;
+  margin: 10px;
+  border: 2px solid var(--sub-border);
+  border-radius: 8px;
+  padding: 10px 25px;
+  background: var(--box-background);
+}
