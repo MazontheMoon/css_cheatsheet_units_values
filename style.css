@@ -42,7 +42,6 @@ Text and fonts
 
 /*fallback fonts - never shall Times New Roman be seen again!!!*/
 h1,
-h2,
 h3,
 p,
 a,
@@ -116,4 +115,23 @@ ul {
 
 .example {
   text-shadow: 2px 2px 3px var(--border);
+}
+
+/*=====================
+Responsiveness
+======================*/
+@media screen and (max-width: 768px) {
+  h1 {
+    padiing: 5px;
+  }
+
+  .container,
+  .container section {
+    width: 95%;
+    padding: 5px;
+  }
+
+  .list {
+    padding: 0;
+  }
 }
