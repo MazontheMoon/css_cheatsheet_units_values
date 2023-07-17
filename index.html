@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Teach Myself CSS - Units and Values">
     <title>CSS Units and Values</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
   <header>
@@ -60,36 +61,59 @@
       <div>
         <ul>
           <li>
-            <p>Keywords</p>
+            <p>keywords</p>
             <p>165 values</p>
             <p><span class="example">background-color: red;</span></p>
           </li>
           <li>
-            <p>Hexadecimal</p>
+            <p>hexadecimal</p>
             <p>256 values</p>
             <p><span class="example">background-color: #ff0000;</span></p>
           </li>
           <li>
-            <p>RGB</p>
+            <p>rgb</p>
             <p>Red Green Blue</p>
             <p>256 values</p>
             <p><span class="example">background-color: rgb (0,0,255);</span></p>
+            <p><span class="example">background-color: rgb (0,0,255 / .5); /*with 50% opacity */</span></p>
           </li>
           <li>
-            <p>HSL</p>
+            <p>hsl</p>
             <p>Hue Saturation Light</p>
             <p>16.7 million values</p>
             <p><span class="example">background-color: hsl(240, 100%, 50%);</span></p>
           </li>
           <li>
-            <p>RGBA</p>
+            <p>rgba <b>DEPRECATED</b></p>
             <p>Red Green Blue Alpha (transparency)</p>
             <p><span class="example">background-color: rgba (255,0,0,0.5);</span></p>
           </li>
           <li>
-            <p>HSLA</p>
+            <p>hsla</p>
             <p>Hue Saturation Light Alpha (transparency)</p>
             <p><span class="example">background-color: hsla(240, 100%, 50%, 0.5);</span></p>
+          </li>
+          <li>
+            <p>lab()</p>
+            <p>The lab() functional notation expresses a given color in the CIE L*a*b* color space.</p> 
+            <p>Lab represents the entire range of color that humans can see</p>
+            <p><span class="example">background-color: lab(100 125 125);</span></p>
+          </li>
+          <li>
+            <p>oklab()</p>
+            <p>The oklab() functional notation expresses a given color in the Oklab color space, which attempts to mimic how color is perceived by the human eye.</p> 
+            <p><span class="example">background-color: oklab(0.5 -0.3 -0.4);</span></p>
+          </li>
+          <li>
+            <p>lch()</p>
+            <p>The lch() functional notation expresses a given color in the LCH color space. It has the same L axis as lab(), but uses polar coordinates C (Chroma) and H (Hue).</p> 
+            <p><span class="example">background-color: lch(0% 100 240);</span></p>
+          </li>
+          <li>
+            <p>hwb()</p>
+            <p>The hwb() functional notation expresses a given color according to its hue, whiteness, and blackness (an optional alpha component represents the color's transparency)</p> 
+            <p><span class="example">background-color: hwb(194 0% 0%);</span></p>
+            <p><span class="example">background-color: hwb(194 0% 0% / .5); /*with 50% opacity */ </span></p>
           </li>
           <li>
             <p>Opacity</p>
