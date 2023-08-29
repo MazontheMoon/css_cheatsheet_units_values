@@ -7,7 +7,7 @@ Declare variables for page
   --box-background: #fce4ec; /*Peach*/
   --border: #7880b5; /*Lilac*/
   --sub-border: #6bbaec; /*Turquoise*/
-  --text: #6987c9; /*Blue*/
+  --text: #000; /*Dark*/
 }
 
 /*import fonts*/
