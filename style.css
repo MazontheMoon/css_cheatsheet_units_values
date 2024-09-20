@@ -10,8 +10,6 @@ Declare variables for page
   --text: #000; /*Dark*/
 }
 
-/*import fonts*/
-
 /*=====================
 Basic Styles 
 ======================*/
@@ -122,7 +120,7 @@ Responsiveness
 ======================*/
 @media screen and (max-width: 768px) {
   h1 {
-    padiing: 5px;
+    padding: 5px;
   }
 
   .container,
@@ -133,5 +131,33 @@ Responsiveness
 
   .list {
     padding: 0;
+  }
+}
+
+/*==========================
+Ye old timer printing view
+===========================*/
+@media print {
+  .container {
+    width: 100%;
+    border: none;
+    padding: none;
+    color: black;
+  }
+
+  .container section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+  }
+
+  h3 {
+    text-decoration: none;
+  }
+
+  .example {
+    text-shadow: 0 0 0 black;
   }
 }
