@@ -20,9 +20,9 @@ Web Browser
 
 ## Versioning
 
-Version #1.1 - initial content
-Version #1.2 - Update color values with new content
-Version #1.3 - Update units with dynamic viewports
+* Version #1.1 - initial content
+* Version #1.2 - Update color values with new content
+* Version #1.3 - Update units with dynamic viewports
 
 ## Authors
 
